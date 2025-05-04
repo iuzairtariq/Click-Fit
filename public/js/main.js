@@ -44,7 +44,7 @@ $(document).ready(function () {
         formData.append('image', file);
 
         $.ajax({
-            url: '/upload',  // We'll create this endpoint in Node.js
+            url: '/upload',  
             type: 'POST',
             data: formData,
             processData: false,
@@ -71,7 +71,7 @@ document.querySelectorAll('.show-toast').forEach(function (btn) {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('active'); // Add class on scroll
+            entry.target.classList.add('active'); 
         }
     });
 }, { threshold: 0.5 }); // 50% element visible hone par trigger
