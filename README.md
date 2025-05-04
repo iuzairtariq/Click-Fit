@@ -1,2 +1,1 @@
-project view command in terminal
-node server/app.js
+project view command in terminal: node server/app.js
