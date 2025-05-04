@@ -2,6 +2,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-padding-top: 60px;
+}
+
 /* Animation CSS */
 .fade-in-left,
 .fade-in-right {
