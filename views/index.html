@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Click Fit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/css/styles.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container">
+      <a class="navbar-brand fs-3 fw-semibold" href="#">Click Fit</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Centered Navigation Links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active show-toast" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Login Button (right aligned) -->
+        <div class="d-flex">
+          <button class="show-toast btn btn-outline-success" type="submit">Login</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Section -->
+  <section class="py-5 bg-light" id="home">
+    <div class="container">
+      <div class="row align-items-center min-vh-75">
+        <!-- Left Content -->
+        <div class="col-md-6 mb-4 mb-md-0 fade-in-left">
+          <h1 class="display-4 fw-bold mb-4">
+            Transform Your
+            <span class="text-primary">Fitness Journey</span>
+          </h1>
+          <p class="lead mb-4">
+            Track your progress, join our community, and achieve your fitness goals
+            with Click Fit's personalized training programs.
+          </p>
+          <button class="show-toast btn btn-primary btn-lg px-5 py-3">
+            Start Free Trial <i class="bi bi-arrow-right ms-2"></i>
+          </button>
+        </div>
+
+        <!-- Right Carousel -->
+        <div class="col-md-6 fade-in-right">
+          <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-4 shadow-lg">
+              <div class="carousel-item active">
+                <img src="/public/used_images/gym view.jpg" class="d-block w-100" alt="gym view">
+              </div>
+              <div class="carousel-item">
+                <img src="/public/used_images/equipments.jpg" class="d-block w-100" alt="equipments">
+              </div>
+              <div class="carousel-item">
+                <img src="/public/used_images/workout men.jpg" class="d-block w-100" alt="workout men">
+              </div>
+              <div class="carousel-item">
+                <img src="/public/used_images/supplements.jpg" class="d-block w-100" alt="supplements">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section class="about-section responsive-padding" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image Column -->
+        <div class="col-lg-6 col-md-6 mb-4 mb-md-0 fade-in-right">
+          <div class="ratio ratio-16x9 bg-light">
+            <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-4">
+              <img src="/public/used_images/about.jpeg" class="w-75 img-fluid object-fit-cover rounded-4"
+                alt="About Us Image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Content Column -->
+        <div class="col-lg-6 col-md-6 fade-in-left mt-5 mt-md-0">
+          <!-- Heading -->
+          <h2 class="display-6 fw-bold mb-4">ABOUT US —</h2>
+
+          <!-- First paragraph -->
+          <p class="lead mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nam vitae pariatur exercitationem illo
+            perspiciatis?
+          </p>
+
+          <!-- Second paragraph -->
+          <p class="lead mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur asperiores cum aperiam magnam
+            impedit?
+          </p>
+
+          <!-- Mission section -->
+          <div class="mission-section">
+            <h3 class="fw-bold mb-3 text-primary">Our Mission</h3>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, dignissimos minima magni ab nobis eos ut
+              dolor adipisci architecto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery section -->
+  <section class="bg-light py-5" id="products">
+    <div class="container mx-auto">
+      <div class="d-flex flex-wrap mb-5">
+        <div class="col-lg-4 mb-4 mb-lg-0 fade-in-right">
+          <h1 class="display-5 fw-medium mb-0">Over <span class="text-primary">Outlet</span></h1>
+        </div>
+        <div class="col-lg-8 ps-lg-4 fade-in-left">
+          <p class="lead text-muted mb-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt temporibus cupiditate dicta aliquam dolor
+            provident incidunt placeat totam rem ipsam!
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-2">
+        <!-- Left Column -->
+        <div class="col-12 col-md-6 fade-in-left">
+          <div class="row g-2">
+            <div class="col-6 zoom">
+              <img src="/public/used_images/Dynamic Trainer.jpeg" class="img-fluid object-fit-cover ratio ratio-5x3">
+            </div>
+            <div class="col-6 zoom">
+              <img src="/public/used_images/Outdoor Cardio.jpeg" class="img-fluid object-fit-cover ratio ratio-5x3">
+            </div>
+            <div class="col-12 zoom">
+              <img src="/public/used_images/Stretch & Recover.jpeg" class="img-fluid object-fit-cover ratio ratio-16x9">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-12 col-md-6 fade-in-right">
+          <div class="row g-2">
+            <div class="col-12 zoom">
+              <img src="/public/used_images/Strength Focus.jpeg" class="img-fluid object-fit-cover ratio ratio-16x9">
+            </div>
+            <div class="col-6 zoom">
+              <img src="/public/used_images/Yoga Serenity.jpeg" class="img-fluid object-fit-cover ratio ratio-5x3">
+            </div>
+            <div class="col-6 zoom">
+              <img src="/public/used_images/Healthy Lifestyle.jpeg" class="img-fluid object-fit-cover ratio ratio-5x3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Section -->
+  <div class="container my-5">
+    <div class="row fade-in-left">
+      <!-- Left: Some fitness info -->
+      <div class="col-md-6 mb-4">
+        <h2>Stay Fit, Stay Strong 💪</h2>
+        <p class="lead">Click Fit helps you track, train and transform your body into a better you.</p>
+        <button class="show-toast btn btn-primary mt-3 animate-btn">Join Now</button>
+      </div>
+
+      <!-- Right: Fun Fact from API -->
+      <div class="col-md-6">
+        <h4>Fitness Fun Fact of the Day:</h4>
+        <h6>response from api</h6>
+        <div id="fact-box" class="border rounded p-3 bg-light shadow-sm">
+          <em>Loading...</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Upload Area -->
+    <div class="my-5 fade-in-right">
+      <h3>Upload Your Progress Image</h3>
+      <div id="drop-zone" style="cursor: pointer;" class="border border-primary p-5 text-center rounded bg-light">
+        <p>Drag & Drop Image Here or Click to Upload</p>
+        <input type="file" id="file-input" hidden>
+      </div>
+      <div id="upload-status" class="mt-3 text-success"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast opacity-100 bg-white fade-in-left" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Click Fit</strong>
+        <small>Just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        This event not available yet, Please check back later.
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light border-top py-3 mt-auto">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Title - Left (Always) -->
+        <div class="col-6 col-md-4 text-start">
+          <span class="fs-3 fw-semibold">CLICK FIT</span>
+        </div>
+
+        <!-- Copyright - Center (Only on md+) -->
+        <div class="d-none d-md-block col-md-4 text-center">
+          <small class="text-muted">
+            &copy; <span id="current-year"></span> All Rights Reserved
+          </small>
+        </div>
+
+        <!-- Designed By - Right (Always) -->
+        <div class="col-6 col-md-4 text-end">
+          <a href="#" class="text-decoration-none text-dark">
+            <em>Designed by: </em> <strong>Uzair Tariq</strong>
+          </a>
+        </div>
+
+        <!-- Copyright - Below (Only on sm) -->
+        <div class="col-12 d-md-none text-center mt-2">
+          <small class="text-muted">
+            &copy; <span id="current-year"></span> All Rights Reserved
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap 5 CDN Links -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- custom js -->
+  <script src="../public/js/main.js"></script>
+</body>
+
+</html>

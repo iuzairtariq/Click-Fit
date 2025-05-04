@@ -1,0 +1,68 @@
+body {
+    overflow-x: hidden;
+}
+
+/* Animation CSS */
+.fade-in-left,
+.fade-in-right {
+    opacity: 0;
+    /* Shuru mein invisible */
+    transition: all 1s ease-out;
+    /* Smooth movement */
+}
+
+/* Jab element screen mein aaye */
+.fade-in-left.active {
+    opacity: 1;
+    transform: translateX(0) !important;
+    /* Final position */
+}
+
+.fade-in-right.active {
+    opacity: 1;
+    transform: translateX(0) !important;
+}
+
+/* Left se 50px bahar */
+.fade-in-left {
+    transform: translateX(-50px);
+}
+
+/* Right se 50px bahar */
+.fade-in-right {
+    transform: translateX(50px);
+}
+
+/* for navbar */
+.navbar {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* for about */
+.responsive-padding {
+    padding: 120px 0;
+    /* Default for larger screens */
+}
+
+@media (max-width: 768px) {
+    .responsive-padding {
+        padding: 80px 0 40px 0;
+        /* Top:60px, Bottom:30px on mobile */
+    }
+}
+
+.zoom {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.zoom img {
+    display: block;
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+
+.zoom:hover img {
+    transform: scale(1.2);
+    /* 20% zoom */
+}
